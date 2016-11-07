@@ -1,0 +1,42 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+
+Application Structure :
+
+Models :
+
+*Users
+*Publications
+*Subscriptions
+
+Users : 
+
+1 . Users have an email and password
+2.  Use devise for drop-in authentication
+
+
+Publications :
+
+1.users can "subscribe" to receive weekly publications
+2.Bare bones as it isn't crucial to building subscriptions
+3.Build access logic for active subscriptions
+
+Subscriptions :
+
+1.	Subscriptions and users are one-to-one,meaning a user has one subscription, and vice-versa
+2. Subscriptions store information about the user and their data from the stripe API
+
+
+Integrating with stripe API
+
+Reference for strip API http://stripe.com
+
+
+Stripe.js
+
+1.Client side JavaScript library
+2.Creditcard information never touches our servers
+3.A stripe "token" is used to communicate back and forth
